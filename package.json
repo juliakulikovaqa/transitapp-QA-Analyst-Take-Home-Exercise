@@ -1,0 +1,14 @@
+{
+  "name": "transitapp-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "cd automated-tests && npx playwright install --with-deps",
+    "test": "cd automated-tests && npx playwright test",
+    "test:headed": "cd automated-tests && npx playwright test --headed",
+    "report": "cd automated-tests && npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
